@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高橋 ジョウタロウ とは | Diamond Leaders Academy</title>
+    <meta name="description" content="ダイヤモンドリーダーズアカデミー創設学長・高橋ジョウタロウのプロフィール。美容師から経営者・コンサルタントへの軌跡と、DLA創設に至るストーリーを紹介します。">
+    <link rel="icon" type="image/png" href="./img/rogo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./subpage-common.css">
+    <style id="page-style">
+        /* Profile hero */
+        .profile-hero {
+            background: linear-gradient(135deg, #060056 0%, #0d0080 100%);
+            padding: 188px 0 80px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(232, 214, 103, 0.16), transparent 70%);
+            pointer-events: none;
+        }
+
+        .profile-hero-inner {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .profile-photo-wrap {
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 3/4;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-badge {
+            position: absolute;
+            bottom: -16px;
+            right: -16px;
+            color: #060056;
+            border-radius: 20px;
+            padding: 14px 20px;
+            font-size: 0.88rem;
+        }
+
+        .profile-title-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            border-radius: 999px;
+            background: rgba(232, 214, 103, 0.2);
+            border: 1px solid rgba(232, 214, 103, 0.4);
+            color: #E8D667;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .profile-name {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .profile-name ruby rt {
+            font-size: 0.45em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .profile-position {
+            font-size: 1.05rem;
+            color: #E8D667;
+            margin-bottom: 24px;
+        }
+
+        .profile-lead {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.95;
+            color: #060056
+        }
+
+        /* 3 values */
+        .values-section {
+            padding: 60px 0;
+            background: #fff;
+
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .value-card {
+            border-radius: 28px;
+            padding: 38px 28px;
+            background: linear-gradient(135deg, rgba(6, 0, 86, 0.03), rgba(232, 214, 103, 0.06));
+            border: 1px solid rgba(232, 214, 103, 0.25);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .value-card h3 {
+            font-size: 1.2rem;
+            color: #060056;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 1.85;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .video-wrap {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .video-embed {
+            position: relative;
+            padding-top: 56.25%;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(6, 0, 86, 0.15);
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-caption {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 1rem;
+            color: #060056;
+            font-weight: 700;
+        }
+
+        .video-caption p {
+            font-size: 0.92rem;
+            font-weight: 400;
+            color: #4f4f58;
+            margin-top: 8px;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .story-lead {
+            max-width: 820px;
+            margin: 0 auto 64px;
+            text-align: center;
+        }
+
+        .story-lead h2 {
+            font-size: 2rem;
+            color: #060056;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .story-lead p {
+            font-size: 0.97rem;
+            font-weight: 400;
+            line-height: 1.95;
+            color: #4f4f58;
+        }
+
+        /* Full Timeline */
+        .full-timeline {
+            max-width: 780px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .full-timeline::before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #E8D667 0%, rgba(232, 214, 103, 0.2) 100%);
+        }
+
+        .ftl-item {
+            position: relative;
+            margin-bottom: 48px;
+        }
+
+        .ftl-dot {
+            position: absolute;
+            left: -49px;
+            top: 4px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #060056;
+            border: 3px solid #E8D667;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #E8D667;
+        }
+
+        .ftl-item h3 {
+            font-size: 1.1rem;
+            color: #060056;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(232, 214, 103, 0.3);
+        }
+
+        .ftl-item p {
+            font-size: 0.92rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 1.9;
+        }
+
+        /* 3 Key Events */
+        .key-events {
+            padding: 80px 0;
+            background: #060056;
+            color: #fff;
+        }
+
+        .key-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .key-card {
+            border-radius: 24px;
+            padding: 36px 28px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(232, 214, 103, 0.2);
+        }
+
+        .key-num {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #E8D667;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .key-card h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .key-card p {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.82);
+            line-height: 1.85;
+        }
+
+        /* Phrase */
+        .phrase-section {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .phrase-box {
+            max-width: 820px;
+            margin: 0 auto;
+            border-radius: 28px;
+            background: #fff;
+            border: 1px solid rgba(6, 0, 86, 0.07);
+            box-shadow: 0 14px 40px rgba(6, 0, 86, 0.07);
+            padding: 60px 56px;
+            position: relative;
+        }
+
+        .phrase-box::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 5rem;
+            color: rgba(6, 0, 86, 0.08);
+            line-height: 1;
+            font-family: serif;
+        }
+
+        .phrase-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #060056;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .phrase-sub {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 1.95;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .profile-hero-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-photo {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
+            .values-grid,
+            .key-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .profile-name {
+                font-size: 2.2rem;
+            }
+
+            .values-grid,
+            .key-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .phrase-box {
+                padding: 40px 28px;
+            }
+
+            .phrase-text {
+                font-size: 1.2rem;
+            }
+
+            .full-timeline {
+                padding-left: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- 共通ヘッダー（header.html を common.js が自動挿入） -->
+    <div id="header-placeholder"></div>
+
+    <!-- Profile Hero -->
+    <section class="subpage-hero" aria-label="ページトップ">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <a href="./index.html">TOP</a><span>›</span><a
+                    href="./dla-guide.html">DLAとは（はじめての方へ）</a><span>›</span><strong>高橋 ジョウタロウ とは</strong>
+            </nav>
+            <h1 class="subpage-hero-title" id="subpage-hero-title">高橋 ジョウタロウ とは</h1>
+        </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <div class="spa-tabs-wrap">
+        <nav class="spa-tabs" aria-label="下層ページメニュー">
+            <a href="./dla-guide.html" class="spa-tab" aria-current="false">DLAとは（はじめての方へ）</a>
+            <a href="./jo-takahashi.html" class="spa-tab active" aria-current="page">高橋 ジョウタロウとは</a>
+            <a href="./philosophy.html" class="spa-tab" aria-current="false">DLAの理念</a>
+            <a href="./company.html" class="spa-tab" aria-current="false">会社概要</a>
+            <a href="./contact.html" class="spa-tab" aria-current="false">お問合せ</a>
+        </nav>
+    </div>
+    </div>
+
+    <main>
+        <!-- Profile Intro（旧 profile-hero の内容） -->
+        <section class="section" style="background:#ffffff; padding:60px 0 80px;">
+            <div class="container">
+                <div class="profile-hero-inner fade-in">
+                    <div class="profile-photo-wrap">
+                        <div class="profile-photo"><img src="./img/dla-guide/profile-2.jpg"
+                                alt="ダイヤモンドリーダーズアカデミー 創設学長 高橋ジョウタロウ"></div>
+                    </div>
+                    <div>
+                        <p style="color:#060056;font-weight:700;margin-bottom:5px;font-size: 2rem;">
+                            高橋ジョウタロウ
+                        </p>
+                        <p class="profile-position" style="color:#060056;font-weight:600;margin-bottom:12px;">
+                            ダイヤモンドリーダーズアカデミー 創設学長</p>
+                        <p class="profile-lead">
+                            美容師から始まり、独立・フランチャイズ展開・コンサルタントとして、業界歴25年の歩みを重ねてきました。
+                            <br>自分自身が数千万円の自己投資をし、<span class="highlight">現場の悩みを全身で経験してきた</span>からこそ言えることがあります。
+                            <br>「失敗を恐れずに挑戦してきたから今があります」——その言葉がDLAの全ての根底にあります。
+                            <br>答えの無い時代に、<span class="highlight">自ら答えを作り出す力</span>を。変化の激しい時代に、<span
+                                class="highlight">自ら変革を起こす力</span>を。先の見えない時代に、<span
+                                class="highlight">自ら未来を生み出す力</span>を。
+                            <br>Diamond Leader's
+                            Academy（DLA）は、<span
+                                class="highlight">「人と組織の問題解決」に特化した学びの場。心理学・脳科学・成功哲学を融合した</span>「価値観教育」を通じ、能力だけではなく人間力を高めることで、本質的な課題解決を目指します。
+                            <br>時代によって移り変わる小手先のテクニックではなく、「原理原則」に基づいた普遍的な成功法則。<span
+                                class="highlight">「やり方」の前に「あり方」を磨き、理念経営を実践できる人財を育てます。</span>
+                            <br>私たちDLAでは高い価値基準を持ち、自ら輝きを放つ「ダイヤモンドスタッフ」とダイヤモンドスタッフが中心となって活躍し成長・発展する組織「ダイヤモンドカンパニー」、そして理念・ビジョン・利益を実現する真のリーダー「ダイヤモンドリーダー」の育成を目指しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Core Values -->
+        <section class="values-section section">
+            <div class="container">
+                <h2 class="section-title fade-in">大切にしている3つのキーワード</h2>
+                <div class="values-grid">
+                    <div class="value-card fade-in">
+                        <h3>挑戦</h3>
+                        <p>スポーツトレーナーの夢を断たれ、事故で美容師を辞め、それでも壁に向かい続けた。不遇に見える出来事の中に、必ず気づきがあると信じてきました。</p>
+                    </div>
+                    <div class="value-card fade-in">
+                        <h3>投資</h3>
+                        <p>経営と組織づくりを磨くために、数千万円規模の自己投資を継続。知識と体験の両方を積み重ねてきた"本気の学び"が、DLAの礎になっています。</p>
+                    </div>
+                    <div class="value-card fade-in">
+                        <h3>貢献</h3>
+                        <p>「悩む経営者の支えになりたい」という思いがDLAの原点。自分が経験した遠回りを、次の世代の経営者には辿らせたくないという純粋な想いです。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section section">
+            <div class="container">
+                <h2 class="section-title fade-in">高橋ジョウタロウ をより知っていただくために</h2>
+                <p class="section-subtitle fade-in">本人が語る「失敗を恐れずに挑戦してきたから今がある」という言葉の背景をご覧ください。</p>
+                <div class="video-wrap fade-in">
+                    <div class="video-embed">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/KlZ_yioLK40?si=dq4QtgQZ4RGFBK6G"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        高橋ジョウタロウ 自己紹介動画
+                        <p>「失敗を恐れずに挑戦してきたから今があります。一見不幸に感じてしまうこと、不遇に思ってしまうこと。実はこれは自分に大切な気づきを与えてくれるメッセージ。だからこそ、恐れずこれからも挑戦し続けていきます。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Key Events in Life -->
+        <section class="key-events section">
+            <div class="container">
+                <h2 class="section-title section-title-white fade-in">僕の人生に大きな影響を与えた3つのこと</h2>
+                <div class="key-grid">
+                    <div class="key-card fade-in">
+                        <div class="key-num">01</div>
+                        <h3>父の存在と「お金がない」という現実</h3>
+                        <p>エリア職人として家族を支えてくれた父。しかし景気の影響で、高校生の私がスポーツトレーナーを目指したいと相談したとき、「支援できない」と断られました。お金がないことで未来の可能性が閉ざされることへの悔しさが、私の原動力になりました。
+                        </p>
+                    </div>
+                    <div class="key-card fade-in">
+                        <div class="key-num">02</div>
+                        <h3>7月7日の交通事故</h3>
+                        <p>美容師として情熱を持って働いていたある日、通勤途中に車に撥ねられ救急車で運ばれました。それを機に美容師の道を引退。「また未来の可能性がたかれてしまう」と感じましたが、そこからの転換がすべての始まりでした。
+                        </p>
+                    </div>
+                    <div class="key-card fade-in">
+                        <div class="key-num">03</div>
+                        <h3>7月4日 誕生日に独立</h3>
+                        <p>31歳の誕生日に美容室の経営をスタート。朝から夜中まで1年間ほとんど休まず奮闘しました。スタッフとの関係づくりの難しさに涙したこともありました。しかし「今の結果は自分が作っていること」と気づき、壁から目をそらさないと決めました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Story Timeline -->
+        <section class="story-section section">
+            <div class="container">
+                <div class="story-lead fade-in">
+                    <h2>美容師から経営者へ、そしてDLAへ</h2>
+                    <p>
+                        失敗と挑戦を繰り返しながら積み上げてきたキャリア。経営の現場で感じた悩みをそのままプログラムに落とし込んだのが、ダイヤモンドリーダーズアカデミーです。
+                    </p>
+                </div>
+                <div class="full-timeline">
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">START</div>
+                        <h3>高校卒業後 ── 床屋で働き始める</h3>
+                        <p>父の紹介で知り合いの床屋の下で働くことになりました。でもやっぱり自分には美容の道が良いという思いが抑えられなくなり、美容師に転職。本当にお米とネギとお味噌汁、それから缶詰一つ。そんな食事を送るような毎日でしたが、大好きな道だからと毎日一生懸命頑張りました。
+                        </p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">事故</div>
+                        <h3>仕事が楽しくなってきたある日 ── 交通事故</h3>
+                        <p>忘れもしない7月7日、通勤途中に交差点で車に撥ねられてしまいました。救急車で運ばれ、これをきっかけに美容師の道を引退。「また未来の可能性がたかれてしまう」と感じながら、何回か転職をしてキャリアを重ねていきました。
+                        </p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">独立</div>
+                        <h3>31歳 ── 美容室経営をスタート（2013年7月4日 創業）</h3>
+                        <p>自分の誕生日に1店舗目を開業。朝から夜中まで1年間ほとんど休まず一生懸命頑張りました。しかしどうしてもスタッフと折り合いがつかず、うまく関係性を作ることができませんでした。悔しくて涙を流したこともありましたが、「今の結果は自分が作っていること」と気づき、壁から目をそらさないと決めました。
+                        </p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">拡大</div>
+                        <h3>2店舗目開業 → コンサル会社とサロンオーナー業を掛け持ち</h3>
+                        <p>マネジメントに苦戦しながらも2店舗目を開業。コンサル会社とサロンオーナー業を掛け持ちする形で経営ノウハウを磨いていきました。この時期に学んだ組織づくりの知見が、後のDLAの核心になっていきます。
+                        </p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">FC</div>
+                        <h3>2店舗・4店舗をフランチャイズで展開</h3>
+                        <p>フランチャイズ展開により、複数の店舗を同時にマネジメントする経験を積みました。組織を「設計する」視点を持つことの大切さを、成功と失敗の両方から学んだ時期です。</p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">転換</div>
+                        <h3>悩む経営者の支えになりたい ── コンサル事業を本格スタート</h3>
+                        <p>自分が経営に悩んできた経験をもとに、「同じ状況にいる経営者の支えになりたい」という純粋な想いからコンサルティング事業を本格化。サロン4店舗を任せ、会長職に就任しました。</p>
+                    </div>
+                    <div class="ftl-item fade-in">
+                        <div class="ftl-dot">DLA</div>
+                        <h3>フランチャイズ含め4店舗全てを売却 ── DLA創設へ</h3>
+                        <p>全てのサロン事業を手放し、経営者の育成に全力を注ぐことを決意。ダイヤモンドリーダーズアカデミーを創設し、サロン経営者が本当に変われる場をつくることを人生の使命としました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phrase -->
+        <section class="phrase-section section">
+            <div class="container">
+                <div class="phrase-box fade-in">
+                    <p class="phrase-text">
+                        「壁から目をそらさず、どんなにつらいときでも<br>絶対にこの壁を乗り越える——そう決めたんです。」
+                    </p>
+                    <p class="phrase-sub">
+                        一見不幸に感じてしまうこと、不遇に思ってしまうこと。実はこれは自分に大切な気づきを与えてくれるメッセージです。
+                        だからこそ私は、恐れずこれからも挑戦し続けていきます。
+                        そしてその経験を全て、DLAのプログラムに込めています。
+                    </p>
+                    <div style="text-align:right;margin-top:24px;font-size:0.9rem;color:#060056;font-weight:700;">
+                        ─ 高橋 ジョウタロウ
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section-navy">
+            <div class="container" style="text-align:center;">
+                <h2 class="section-title section-title-white fade-in">高橋ジョウタロウと共に、組織を変えませんか</h2>
+                <p class="section-subtitle fade-in" style="color:rgba(255,255,255,0.82);">
+                    まずは無料体験セミナーで、その考え方と全体像を体感してください。</p>
+                <div class="page-hero-actions fade-in" style="justify-content:center;margin-top:0;">
+                    <a href="./index.html#seminar" class="btn btn-primary">無料体験セミナーに申し込む</a>
+                    <a href="./contact.html#contact-form" class="btn btn-dark">無料経営相談を予約する</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 共通フッター（footer.html を common.js が自動挿入） -->
+    <div id="footer-placeholder"></div>
+
+    <script src="./common.js"></script>
+    <script src="./subpage-spa.js"></script>
+    <script src="./subpage-common.js"></script>
+</body>
+
+</html>

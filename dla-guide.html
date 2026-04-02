@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLAとは（はじめての方へ） | Diamond Leaders Academy</title>
+    <meta name="description" content="DLAとは何か、はじめての方向けに理念・成果・組織・文化を実装する実践型アカデミーの全体像をご紹介します。業界歴25年の実績から生まれたプログラムです。">
+    <link rel="icon" type="image/png" href="./img/rogo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./subpage-common.css">
+    <style id="page-style">
+        /* ---- Page-specific styles ---- */
+        #subpage-hero-title {
+            white-space: nowrap;
+            font-size: clamp(1rem, 4vw, 2rem);
+            white-space: nowrap;
+        }
+
+        .catch-hero {
+            position: relative;
+            padding: 180px 0 60px;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            background: url('./img/mv_bg.jpg') center/cover no-repeat;
+        }
+
+        .catch-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(6, 0, 86, 0.72);
+            pointer-events: none;
+        }
+
+        .catch-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .catch-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border-radius: 999px;
+            background: rgba(232, 214, 103, 0.2);
+            border: 1px solid rgba(232, 214, 103, 0.4);
+            color: #E8D667;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            margin-bottom: 20px;
+        }
+
+        .catch-title {
+            font-size: 2.6rem;
+            line-height: 1.2;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+        }
+
+        /* ---- intro catch section ---- */
+        .intro-catch-section {
+            padding: 72px 0 60px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .intro-catch-headline {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #060056;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+
+        .intro-catch-headline em {
+            font-style: normal;
+            color: #060056;
+            background: linear-gradient(transparent 58%, rgba(232, 214, 103, 0.55) 58%);
+            padding: 0 4px;
+        }
+
+        .intro-catch-lead {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 2;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Authority Cards */
+        .authority-strip {
+            background: #fff;
+            padding: 60px 0;
+        }
+
+        .authority-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .authority-card {
+            border-radius: 28px;
+            padding: 36px 28px;
+            background: #fafafa;
+            border: 1px solid rgba(6, 0, 86, 0.07);
+            box-shadow: 0 8px 24px rgba(6, 0, 86, 0.06);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .authority-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .authority-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e7e7e7, #e7e7e7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 1.6rem;
+        }
+
+        .authority-value {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #060056;
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+
+        .authority-label {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #060056;
+            margin-bottom: 10px;
+        }
+
+        .authority-desc {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 1.8;
+        }
+
+        /* Problem → Solution split */
+        .problem-solution {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .ps-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .ps-card {
+            border-radius: 28px;
+            padding: 40px 36px;
+            background: #fff;
+            border: 1px solid rgba(6, 0, 86, 0.07);
+            box-shadow: 0 10px 30px rgba(6, 0, 86, 0.06);
+        }
+
+        .ps-card-problem {
+            border-left: 5px solid #E8D667;
+        }
+
+        .ps-card-solution {
+            background: linear-gradient(135deg, rgba(6, 0, 86, 0.03), rgba(6, 0, 86, 0.06));
+            border-left: 5px solid #060056;
+        }
+
+        .ps-badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .ps-badge-problem {
+            background: rgba(232, 214, 103, 0.3);
+            color: #6a5b00;
+        }
+
+        .ps-badge-solution {
+            background: rgba(6, 0, 86, 0.1);
+            color: #060056;
+        }
+
+        .ps-card h3 {
+            font-size: 1.5rem;
+            color: #060056;
+            margin-bottom: 16px;
+        }
+
+        .ps-card p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        /* Benefit / Future */
+        .benefit-section {
+            padding: 80px 0;
+            background: #060056;
+            color: #fff;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+
+        .benefit-card {
+            border-radius: 24px;
+            padding: 36px 28px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(232, 214, 103, 0.25);
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .benefit-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .benefit-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #E8D667;
+            color: #060056;
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+        }
+
+        .benefit-card h3 {
+            color: #E8D667;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 400;
+        }
+
+        /* Empathy */
+        .empathy-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .empathy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+
+        .empathy-card {
+            border-radius: 24px;
+            padding: 36px;
+            border: 1px solid rgba(6, 0, 86, 0.07);
+            background: #fafafa;
+        }
+
+        .empathy-card.danger {
+            border-color: rgba(232, 214, 103, 0.5);
+            background: rgba(232, 214, 103, 0.06);
+        }
+
+        .empathy-card h3 {
+            font-size: 1.3rem;
+            color: #060056;
+            margin-bottom: 14px;
+        }
+
+        .empathy-card p {
+            font-size: 0.93rem;
+            line-height: 1.9;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        .affirm-box {
+            background: linear-gradient(135deg, rgba(232, 214, 103, 0.18), rgba(255, 255, 255, 0.9));
+            border: 1px solid rgba(232, 214, 103, 0.4);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .affirm-box h3 {
+            font-size: 1.6rem;
+            color: #060056;
+            margin-bottom: 16px;
+        }
+
+        .affirm-box p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        /* Program (What) */
+        .program-what {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .yearly-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 48px;
+        }
+
+        .yearly-card {
+            background: #fff;
+            border-radius: 24px;
+            padding: 30px 22px;
+            border: 1px solid rgba(6, 0, 86, 0.06);
+            box-shadow: 0 6px 20px rgba(6, 0, 86, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .yearly-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #E8D667, #d8c14d);
+        }
+
+        .yearly-round {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 14px;
+            border-radius: 999px;
+            background: rgba(232, 214, 103, 0.25);
+            color: #060056;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .yearly-card h3 {
+            font-size: 1.3rem;
+            color: #060056;
+            margin-bottom: 10px;
+        }
+
+        .yearly-card p {
+            font-size: 0.88rem;
+            line-height: 1.8;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        /* Why / Logic */
+        .logic-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .logic-flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 48px;
+            position: relative;
+        }
+
+        .logic-flow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(33.3% + 10px);
+            right: calc(33.3% + 10px);
+            height: 2px;
+            background: rgba(6, 0, 86, 0.15);
+            transform: translateY(-50%);
+        }
+
+        .logic-card {
+            background: #fafafa;
+            border-radius: 24px;
+            padding: 36px 28px;
+            text-align: center;
+            border: 1px solid rgba(6, 0, 86, 0.07);
+        }
+
+        .logic-num {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: #060056;
+            color: #E8D667;
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+        }
+
+        .logic-card h3 {
+            font-size: 1.2rem;
+            color: #060056;
+            margin-bottom: 10px;
+        }
+
+        .logic-card p {
+            font-size: 0.88rem;
+            line-height: 1.8;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        .logic-result {
+            margin-top: 24px;
+            text-align: center;
+            padding: 28px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #060056, #1a0099);
+            color: #E8D667;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        /* Social Proof */
+        .proof-section {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .case-item {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(6, 0, 86, 0.07);
+            transition: transform 0.3s;
+        }
+
+        .case-item:hover {
+            transform: translateY(-6px);
+        }
+
+        .case-img {
+            height: 180px;
+            background: linear-gradient(135deg, rgba(6, 0, 86, 0.1), rgba(232, 214, 103, 0.15));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .case-body {
+            padding: 24px;
+        }
+
+        .case-tag {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 999px;
+            background: rgba(232, 214, 103, 0.3);
+            color: #060056;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .case-item h3 {
+            font-size: 1rem;
+            color: #060056;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .case-item p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        /* Self intro */
+        .intro-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .intro-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .tl-item {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 28px;
+            position: relative;
+        }
+
+        .tl-item:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 40px;
+            bottom: 0;
+            width: 2px;
+            background: rgba(232, 214, 103, 0.5);
+        }
+
+        .tl-dot {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #E8D667;
+            border: 3px solid #060056;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #060056;
+        }
+
+        .tl-content {
+            flex: 1;
+            padding-top: 8px;
+        }
+
+        .tl-content strong {
+            display: block;
+            font-size: 0.95rem;
+            color: #060056;
+            margin-bottom: 4px;
+        }
+
+        .tl-content p {
+            font-size: 0.85rem;
+            color: #4f4f58;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .invest-card {
+            background: linear-gradient(135deg, rgba(6, 0, 86, 0.04), rgba(232, 214, 103, 0.08));
+            border: 1px solid rgba(232, 214, 103, 0.35);
+            border-radius: 24px;
+            padding: 36px;
+        }
+
+        .invest-card h3 {
+            font-size: 1.3rem;
+            color: #060056;
+            margin-bottom: 16px;
+        }
+
+        .invest-card p {
+            font-size: 0.93rem;
+            font-weight: 400;
+            color: #4f4f58;
+            line-height: 1.9;
+            margin-bottom: 14px;
+        }
+
+        .invest-big {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #060056;
+            text-align: center;
+            padding: 20px;
+            background: rgba(232, 214, 103, 0.2);
+            border-radius: 16px;
+            margin: 16px 0;
+        }
+
+        /* Funnel / Steps */
+        .funnel-section {
+            padding: 80px 0;
+            background: var(--bg-gray);
+        }
+
+        .funnel-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 48px;
+        }
+
+        .funnel-step {
+            background: #fff;
+            border-radius: 24px;
+            padding: 28px 20px;
+            text-align: center;
+            border: 1px solid rgba(6, 0, 86, 0.06);
+            position: relative;
+        }
+
+        .funnel-step::after {
+            content: '›';
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.8rem;
+            color: #E8D667;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .funnel-step:last-child::after {
+            display: none;
+        }
+
+        .funnel-step-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #060056;
+            color: #E8D667;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+        }
+
+        .funnel-tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 999px;
+            background: rgba(232, 214, 103, 0.3);
+            color: #060056;
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .funnel-step h4 {
+            font-size: 0.95rem;
+            color: #060056;
+            margin-bottom: 6px;
+        }
+
+        .funnel-step p {
+            font-size: 0.8rem;
+            line-height: 1.7;
+            color: #4f4f58;
+            font-weight: 400;
+        }
+
+        /* Story / World */
+        .story-section {
+            padding: 80px 0;
+            background: #060056;
+            color: #fff;
+        }
+
+        .story-box {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story-icon {
+            font-size: 4rem;
+            margin-bottom: 24px;
+        }
+
+        .story-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #E8D667;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+
+        .story-text {
+            font-size: 1rem;
+            line-height: 2.1;
+            color: rgba(255, 255, 255, 0.88);
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        /* CTA Closing */
+        .closing-section {
+            padding: 80px 0;
+            background: #fafafa;
+            text-align: center;
+        }
+
+        /* ---- tab redesign ---- */
+        .guide-tabs-wrap {
+            background: #fff;
+            border-bottom: 1px solid rgba(6, 0, 86, 0.08);
+        }
+
+        .guide-tabs {
+            display: flex;
+            width: 100%;
+        }
+
+        .guide-tab {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 10px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #060056;
+            background: #f5f0e8;
+            text-decoration: none;
+            transition: background 0.2s;
+            border-right: 1px solid rgba(6, 0, 86, 0.1);
+            text-align: center;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .guide-tab:last-child {
+            border-right: none;
+        }
+
+        .guide-tab.active {
+            background: #fff;
+            color: #060056;
+        }
+
+        .guide-tab.active::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #060056;
+        }
+
+        .guide-tab:hover:not(.active) {
+            background: #ede8dc;
+        }
+
+        /* ---- ps-grid 2col image+text ---- */
+        .ps-grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .ps-img-block {
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, rgba(6, 0, 86, 0.08), rgba(232, 214, 103, 0.18));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ps-img-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ---- empathy 2col ---- */
+        .empathy-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .empathy-img-block {
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, rgba(232, 214, 103, 0.14), rgba(6, 0, 86, 0.06));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .empathy-img-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ---- program list (reused from index) ---- */
+        .program-item-full {
+            display: flex;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            border-left: 5px solid var(--accent, #E8D667);
+            align-items: center;
+        }
+
+        .program-left {
+            flex: 0 0 160px;
+            border-right: 1px solid rgba(6, 0, 86, 0.1);
+            padding-right: 28px;
+            margin-right: 28px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .program-num {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: #060056;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .program-meta-label {
+            font-weight: 700;
+            color: #060056;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .program-right {
+            flex: 1;
+        }
+
+        .program-tag {
+            display: inline-block;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #060056;
+            background: rgba(232, 214, 103, 0.4);
+            padding: 3px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        .program-right p {
+            font-size: 0.9rem;
+            line-height: 1.75;
+            font-weight: 400;
+            color: #1B1B1B;
+        }
+
+        /* ---- voices ticker (reused from index) ---- */
+        .voices-ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            padding: 40px 0;
+            margin-top: 20px;
+        }
+
+        .voices-ticker-track {
+            display: flex;
+            gap: 30px;
+            width: max-content;
+            animation: voiceTicker 30s linear infinite;
+        }
+
+        .voices-ticker-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes voiceTicker {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-50% - 15px));
+            }
+        }
+
+        .voice-ticker-card {
+            background: #fff;
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            width: 380px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .voice-ticker-card blockquote {
+            font-style: italic;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #1B1B1B;
+            flex-grow: 1;
+            margin-bottom: 18px;
+            border-left: 4px solid #E8D667;
+            padding-left: 14px;
+        }
+
+        .voice-owner {
+            border-top: 1px solid #e7e7ed;
+            padding-top: 16px;
+        }
+
+        .voice-owner-info h4 {
+            font-size: 0.95rem;
+            color: #060056;
+            margin-bottom: 4px;
+        }
+
+        .voice-owner-info p {
+            font-size: 0.82rem;
+            color: #4f4f58;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 992px) {
+
+            .authority-grid,
+            .benefit-grid,
+            .case-grid,
+            .funnel-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ps-grid-2col,
+            .empathy-2col,
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logic-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .logic-flow::before {
+                display: none;
+            }
+
+            .funnel-step::after {
+                display: none;
+            }
+
+            .guide-tab {
+                font-size: 0.78rem;
+                padding: 12px 6px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .catch-title {
+                font-size: 1.7rem;
+            }
+
+            .authority-grid,
+            .benefit-grid,
+            .case-grid,
+            .funnel-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .program-item-full {
+                flex-direction: column;
+            }
+
+            .program-left {
+                border-right: none;
+                border-bottom: 1px solid rgba(6, 0, 86, 0.1);
+                padding: 0 0 20px;
+                margin: 0 0 20px;
+                width: 100%;
+            }
+
+            .guide-tabs {
+                flex-wrap: wrap;
+            }
+
+            .guide-tab {
+                flex: 0 0 50%;
+                border-bottom: 1px solid rgba(6, 0, 86, 0.1);
+            }
+
+            .voice-ticker-card {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- 共通ヘッダー（header.html を common.js が自動挿入） -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Hero -->
+    <section class="subpage-hero" aria-label="ページトップ">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <a href="./index.html">TOP</a><span>›</span><strong>DLAとは（はじめての方へ）</strong>
+            </nav>
+            <h1 class="subpage-hero-title" id="subpage-hero-title">DLAとは（はじめての方へ）</h1>
+        </div>
+    </section>
+
+    <!-- Tab Navigation (新デザイン：固定なし・横幅いっぱい) -->
+    <div class="spa-tabs-wrap">
+        <nav class="spa-tabs" aria-label="下層ページメニュー">
+            <a href="./dla-guide.html" class="spa-tab active" aria-current="page">DLAとは（はじめての方へ）</a>
+            <a href="./jo-takahashi.html" class="spa-tab" aria-current="false">高橋 ジョウタロウとは</a>
+            <a href="./philosophy.html" class="spa-tab" aria-current="false">DLAの理念</a>
+            <a href="./company.html" class="spa-tab" aria-current="false">会社概要</a>
+            <a href="./contact.html" class="spa-tab" aria-current="false">お問合せ</a>
+        </nav>
+    </div>
+
+
+    <main>
+        <!-- ★ キャッチコピーセクション -->
+        <section class="intro-catch-section">
+            <div class="container">
+                <p class="intro-catch-headline fade-in">サロン経営に、<em>確実な変革</em>を。<br>あなたの理想を、仕組みに変える。</p>
+                <p class="intro-catch-lead fade-in">
+                    業界歴25年の実際の経験から培った知見をもとに完成したプログラム。<br>心理学・脳科学・成功哲学の原理原則で、人と組織を動かす力を手に入れてください。</p>
+            </div>
+        </section>
+
+        <!-- ① Authority / Proof -->
+        <section class="authority-strip section">
+            <div class="container">
+                <h2 class="section-title fade-in">なぜ、言い切れるのか</h2>
+                <p class="section-subtitle fade-in">業界で培ってきた実績と、学びへの本気の投資が、このプログラムの土台にあります。</p>
+                <div class="authority-grid">
+                    <div class="authority-card fade-in">
+                        <div class="authority-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg></div>
+                        <div class="authority-value">25年</div>
+                        <div class="authority-label">業界歴</div>
+                        <p class="authority-desc">美容師・経営者・コンサルタントとして積み上げてきた実際の経験から教え込まれた知見が土台です。</p>
+                    </div>
+                    <div class="authority-card fade-in">
+                        <div class="authority-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" />
+                                <path d="M6 12v5c0 1.66 2.686 3 6 3s6-1.34 6-3v-5" />
+                            </svg></div>
+                        <div class="authority-value">学び→結果</div>
+                        <div class="authority-label">実践プログラム</div>
+                        <p class="authority-desc">知識を与えるだけでなく、現場での実装まで伴走する再現性のあるプログラムで成果を生み出します。</p>
+                    </div>
+                    <div class="authority-card fade-in">
+                        <div class="authority-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9.5 2a4.5 4.5 0 0 1 4.5 4.5v.5h1a3 3 0 0 1 0 6h-.5v.5a4.5 4.5 0 0 1-9 0V12H5a3 3 0 0 1 0-6h.5V5.5A4.5 4.5 0 0 1 9.5 2z" />
+                            </svg></div>
+                        <div class="authority-value">原理原則</div>
+                        <div class="authority-label">心理学・脳科学・成功哲学</div>
+                        <p class="authority-desc">感覚や経験則だけでなく、人と組織を動かす科学的根拠に基づいた手法で再現性を担保します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ② なぜ、DLAをつくったのか: 2カラム（左画像・右テキスト） -->
+        <section class="problem-solution section">
+            <div class="container">
+                <h2 class="section-title fade-in">なぜ、DLAをつくったのか</h2>
+                <div class="ps-grid-2col fade-in">
+                    <div class="ps-img-block">
+                        <img src="./img/dla-guide/profile-2.jpg" alt="高橋ジョウタロウ" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <div class="content-section">
+                            <div class="text-block" style="margin-bottom: 40px;">
+                                <h2
+                                    style="font-size: 1.5rem; border-left: 4px solid #060056; padding-left: 15px; margin-bottom: 15px;">
+                                    コンサルできる数には限界がある
+                                </h2>
+                                <p style="line-height: 1.8; color: #333;">
+                                    経営に悩むサロンオーナー一人ひとりに向き合うコンサルティングには、どうしても数の限界があります。素晴らしい経営者になれる素質を持った方へ届けるためには、別の方法が必要でした。
+                                </p>
+                            </div>
+
+                            <div class="text-block">
+                                <h2
+                                    style="font-size: 1.5rem; border-left: 4px solid #060056; padding-left: 15px; margin-bottom: 15px;">
+                                    セミナーで「再現できる仕組み」をつくった
+                                </h2>
+                                <p style="line-height: 1.8; color: #333;">
+                                    成果が出る考え方と実践の流れを、誰でも再現できる形で届けるために開発したのがDLAです。商品を売るためではなく、本当に経営を変える仕組みを届けるために設計されたプログラムです。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ③ Benefit / Future -->
+        <section class="benefit-section section">
+            <div class="container">
+                <h2 class="section-title section-title-white fade-in">参加すれば「こうなれる」という未来</h2>
+                <p class="section-subtitle fade-in" style="color:rgba(255,255,255,0.82);">成果の再現性を強調します。あなたにも必ずできます。</p>
+                <div class="benefit-grid">
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-num">1</div>
+                        <h3>理念で組織が動く</h3>
+                        <p>日々の意思決定に迷いが減り、スタッフが自分で判断できる組織へ変わります。</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-num">2</div>
+                        <h3>幹部が育ち、任せられる</h3>
+                        <p>右腕人財が育ち、オーナーが抱えていた判断や責任を分担できるようになります。</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-num">3</div>
+                        <h3>組織が自走する</h3>
+                        <p>属人化から抜け出し、仕組みと人の両輪で成果を出し続ける体制へ進化します。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ★ 導入事例・受講者の声 -->
+            <section class="section section-gray" style="overflow:hidden;">
+                <div class="fade-in" style="text-align:center;">
+                    <h2 class="section-title">導入事例・受講者の声</h2>
+                    <div class="voices-ticker-wrap">
+                        <div class="voices-ticker-track">
+                            <div class="voice-ticker-card">
+                                <blockquote>「幹部が自ら考え、行動するようになり、私が現場に出る時間が半分になりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>美容室 Aサロン オーナー様</h4>
+                                        <p>受講前：問題スタッフ対応に追われ売上頭打ち<br>受講後：評価制度が機能し、自走する組織へ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「プレイングオーナーから卒業し、ようやく『経営』に専念できています。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>エステサロン B店 代表様</h4>
+                                        <p>受講前：自分が休むと売上が下がる恐怖<br>受講後：幹部育成を通じ、右腕の店長が育つ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「理念の共有で採用でのミスマッチがなくなり、離職率が劇的に下がりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>ネイルサロン C店 オーナー様</h4>
+                                        <p>受講前：採用してもすぐにスタッフが辞めてしまう<br>受講後：文化への共感が生まれ、定着率が安定</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「属人的だった技術が仕組み化され、組織全体で利益を生む体質になりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>アイラッシュサロン D店 代表様</h4>
+                                        <p>受講前：自分の技術・指名客だけに依存する構造<br>受講後：若手でも成果を出せる仕組みが完成</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「幹部が自ら考え、行動するようになり、私が現場に出る時間が半分になりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>美容室 Aサロン オーナー様</h4>
+                                        <p>受講前：問題スタッフ対応に追われ売上頭打ち<br>受講後：評価制度が機能し、自走する組織へ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「プレイングオーナーから卒業し、ようやく『経営』に専念できています。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>エステサロン B店 代表様</h4>
+                                        <p>受講前：自分が休むと売上が下がる恐怖<br>受講後：幹部育成を通じ、右腕の店長が育つ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「理念の共有で採用でのミスマッチがなくなり、離職率が劇的に下がりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>ネイルサロン C店 オーナー様</h4>
+                                        <p>受講前：採用してもすぐにスタッフが辞めてしまう<br>受講後：文化への共感が生まれ、定着率が安定</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-ticker-card">
+                                <blockquote>「属人的だった技術が仕組み化され、組織全体で利益を生む体質になりました。」</blockquote>
+                                <div class="voice-owner">
+                                    <div class="voice-owner-info">
+                                        <h4>アイラッシュサロン D店 代表様</h4>
+                                        <p>受講前：自分の技術・指名客だけに依存する構造<br>受講後：若手でも成果を出せる仕組みが完成</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ④ Empathy
+        <section class="empathy-section section">
+            <div class="container">
+                <h2 class="section-title fade-in">成長は大変です。でも、何もしない方がもっと危険です。</h2>
+                <div class="empathy-2col fade-in">
+                    <div>
+                        <div class="empathy-card" style="margin-bottom:24px;">
+                            <h3><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2.5c0 1.5-1.35 2-2 3.5-1.28 2.77-.5 5.5 2 7.5 1 .78 1.5 1 1.5 2v1H7v-1c0-2-1.5-3.5-1.5-6a6.5 6.5 0 0 1 6.5-6.5 2.5 2.5 0 0 1 2.5 2.5v.5z"/><path d="M7 21h10"/></svg> 成長が必要な理由</h3>
+                            <p>経営者として変わるには、価値観を見直し、仕組みを整え、人を育てる必要があります。簡単ではありません。でも、それが今まさに必要なことです。</p>
+                        </div>
+                        <div class="empathy-card danger" style="margin-bottom:24px;">
+                            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 何もしない方がもっと危険</h3>
+                            <p>売上が伸びても楽にならない。幹部が育たない。理念が浸透しない。その状態を放置するほど、明日の選択肢が狭まっていきます。</p>
+                        </div>
+                        <div class="affirm-box">
+                            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 今このページを見ているあなたは、すでに一歩進んでいます。</h3>
+                            <p>課題を直視し、変わりたいと思って情報を探している時点で、その姿勢は素晴らしいものです。ここで立ち止まらず、次の行動へつなげていきましょう。</p>
+                        </div>
+                    </div>
+                    <div class="empathy-img-block">
+                        <img src="./img/TOP/profile.png" alt="経営イメージ" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑤ What is DLA -->
+            <section id="program-what" class="program-what section">
+                <div class="container">
+                    <h2 class="section-title fade-in">ダイヤモンドリーダーズアカデミー（DLA）とは</h2>
+                    <p class="section-subtitle fade-in">
+                        年4回のセミナーを軸に、理念・成果・組織・文化を体系的に学び、<br>
+                        現場へ実装していく実践型ビジネスアカデミーです。
+                    </p>
+                    <div class="program-list" style="display:flex;flex-direction:column;gap:20px;margin-top:40px;">
+                        <div class="program-item-full fade-in">
+                            <div class="program-left">
+                                <div class="program-num">第1回</div>
+                                <div class="program-meta-label">ダイヤモンドカンパニー</div>
+                            </div>
+                            <div class="program-right">
+                                <span class="program-tag">テーマ：理念・ビジョンの言語化、経営の基盤構築</span>
+                                <p><strong>【学習概要】</strong><br>経営の根幹となる「理念・ビジョン」を言語化し、サロンの未来への道筋を明確にデザインします。なぜ独立したのか、どこへ向かうのかをブレなく共有できる状態を作ることで、採用や育成におけるミスマッチを未然に防ぎ、共感力の高い組織を作るための最初のステップです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program-item-full fade-in">
+                            <div class="program-left">
+                                <div class="program-num">第2回</div>
+                                <div class="program-meta-label">テクニカルスキル</div>
+                            </div>
+                            <div class="program-right">
+                                <span class="program-tag">テーマ：成果創出・目標達成スキルの体得・実践</span>
+                                <p><strong>【学習概要】</strong><br>スタッフ一人ひとりが自ら目標・目的を設定し、それを達成するための具体的な技術とマインドセットを体得します。モチベーションに依存せず「確実に成果を出す」ための再現性のある仕組みを導入することで、安定した利益体質のサロンを作ります。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program-item-full fade-in">
+                            <div class="program-left">
+                                <div class="program-num">第3回</div>
+                                <div class="program-meta-label">組織マネジメント</div>
+                            </div>
+                            <div class="program-right">
+                                <span class="program-tag">テーマ：人財育成・組織構築</span>
+                                <p><strong>【学習概要】</strong><br>選択理論心理学などの体系的な人間関係構築論に基づき、対立や摩擦を生まない効果的なマネジメント手法を学びます。指示待ちのスタッフを、自走する「ダイヤモンドスタッフ」「右腕人財」へと育成し、オーナーがいなくても自発的に問題解決ができる強固な組織を構築します。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="program-item-full fade-in">
+                            <div class="program-left">
+                                <div class="program-num">第4回</div>
+                                <div class="program-meta-label">エバンジェリストスキル</div>
+                            </div>
+                            <div class="program-right">
+                                <span class="program-tag">テーマ：文化形成・DNAの伝承</span>
+                                <p><strong>【学習概要】</strong><br>理念浸透・ビジョン共有のためのプレゼンテーション力、発信力・影響力を体得。組織文化とDNAの伝承を行うことで、同じ目的に沿って成長する人財育成・エンゲージメントが高い組織作りを実現します。離職率が軽減され、理念が浸透したダイヤモンドカンパニーへと近づきます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑥ Why Results / Logic -->
+            <section class="logic-section section">
+                <div class="container">
+                    <h2 class="section-title fade-in">なぜ成果が出るのか</h2>
+                    <p class="section-subtitle fade-in">宿題・チーム・競争という3つの仕組みが、学びを確実な行動と成果へと変えます。</p>
+                    <div class="logic-flow">
+                        <div class="logic-card fade-in">
+                            <div class="logic-num">1</div>
+                            <h3><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                                </svg> 宿題</h3>
+                            <p>学んだ内容を自社に落とし込む実践課題があるため、知識だけで終わりません。セミナーと現場が直結します。</p>
+                        </div>
+                        <div class="logic-card fade-in">
+                            <div class="logic-num">2</div>
+                            <h3><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.77L12 21.23l7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z" />
+                                </svg> チーム</h3>
+                            <p>仲間と共に学ぶ環境があることで、視点が増え継続しやすくなります。同業者の成功事例を直接聞けます。</p>
+                        </div>
+                        <div class="logic-card fade-in">
+                            <div class="logic-num">3</div>
+                            <h3><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                    <path d="M4 22h16" />
+                                    <path d="M10 22v-3" />
+                                    <path d="M14 22v-3" />
+                                    <path d="M8 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1" />
+                                    <rect x="6" y="2" width="12" height="13" rx="2" />
+                                </svg> 競争</h3>
+                            <p>適度な緊張感と発信機会があるから、行動が生まれ成果に変わっていきます。互いの成長が刺激になります。</p>
+                        </div>
+                    </div>
+                    <div class="logic-result fade-in">宿題 × チーム × 競争 ＝ 行動 → 成果 → 組織の変革</div>
+                </div>
+            </section>
+
+            <!-- ⑦ 事例紹介（受講後の変化スタイル） -->
+            <section id="social-proof" class="section section-light">
+                <div class="container fade-in">
+                    <h2 class="section-title">事例紹介</h2>
+                    <p class="section-subtitle">実際にDLAを受講し、組織に変化が生まれたサロンオーナーの声です。</p>
+                    <div class="blog-grid"
+                        style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
+                        <a href="#" class="blog-card"
+                            style="text-decoration:none;color:inherit;display:flex;flex-direction:column;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(6,0,86,0.07);transition:transform 0.3s;"
+                            onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
+                            <div
+                                style="height:180px;background:url('https://images.unsplash.com/photo-1522071901873-411886a10004?auto=format&fit=crop&w=400&q=80') center/cover;position:relative;">
+                                <span
+                                    style="position:absolute;top:15px;left:15px;background:#fff;color:#060056;padding:5px 15px;border-radius:20px;font-size:0.8rem;font-weight:bold;">組織・マネジメント</span>
+                            </div>
+                            <div style="padding:24px;flex-grow:1;display:flex;flex-direction:column;">
+                                <h4 style="font-size:1rem;color:#060056;margin-bottom:12px;line-height:1.6;">
+                                    幹部が育ち、現場の意思決定が早くなった</h4>
+                                <p style="font-size:0.88rem;line-height:1.8;color:#4f4f58;font-weight:400;flex-grow:1;">
+                                    理念共有と役割設計を見直したことで、経営者が抱えていた判断がチームに委譲され始めました。</p>
+                                <div style="margin-top:16px;font-size:0.85rem;color:#060056;font-weight:700;">詳細を見る →
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="blog-card"
+                            style="text-decoration:none;color:inherit;display:flex;flex-direction:column;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(6,0,86,0.07);transition:transform 0.3s;"
+                            onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
+                            <div
+                                style="height:180px;background:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80') center/cover;position:relative;">
+                                <span
+                                    style="position:absolute;top:15px;left:15px;background:#fff;color:#060056;padding:5px 15px;border-radius:20px;font-size:0.8rem;font-weight:bold;">採用・文化</span>
+                            </div>
+                            <div style="padding:24px;flex-grow:1;display:flex;flex-direction:column;">
+                                <h4 style="font-size:1rem;color:#060056;margin-bottom:12px;line-height:1.6;">
+                                    組織の空気が変わり、採用と定着に手応え</h4>
+                                <p style="font-size:0.88rem;line-height:1.8;color:#4f4f58;font-weight:400;flex-grow:1;">
+                                    文化づくりを軸にした運営へ切り替えたことで、スタッフが自ら動く状態へ変化しました。</p>
+                                <div style="margin-top:16px;font-size:0.85rem;color:#060056;font-weight:700;">詳細を見る →
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="blog-card"
+                            style="text-decoration:none;color:inherit;display:flex;flex-direction:column;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(6,0,86,0.07);transition:transform 0.3s;"
+                            onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''">
+                            <div
+                                style="height:180px;background:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80') center/cover;position:relative;">
+                                <span
+                                    style="position:absolute;top:15px;left:15px;background:#fff;color:#060056;padding:5px 15px;border-radius:20px;font-size:0.8rem;font-weight:bold;">仕組み化</span>
+                            </div>
+                            <div style="padding:24px;flex-grow:1;display:flex;flex-direction:column;">
+                                <h4 style="font-size:1rem;color:#060056;margin-bottom:12px;line-height:1.6;">
+                                    オーナーが現場を離れても回る仕組みが整った</h4>
+                                <p style="font-size:0.88rem;line-height:1.8;color:#4f4f58;font-weight:400;flex-grow:1;">
+                                    数字・評価・理念の3つが連動し、感覚ではなく仕組みでマネジメントできるようになりました。</p>
+                                <div style="margin-top:16px;font-size:0.85rem;color:#060056;font-weight:700;">詳細を見る →
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="text-align:center;margin-top:36px;" class="fade-in">
+                        <a href="#" class="btn btn-outline" style="border-radius:50px;">すべての事例を見る →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑧ Self Intro / Story -->
+            <section class="intro-section section">
+                <div class="container">
+                    <h2 class="section-title fade-in">高橋 ジョウタロウ とは</h2>
+                    <p class="section-subtitle fade-in">美容師から始まり、経営者・コンサルタントとして歩んできた軌跡</p>
+                    <div class="intro-grid">
+                        <div class="fade-in">
+                            <div class="intro-timeline">
+                                <div class="tl-item">
+                                    <div class="tl-dot">①</div>
+                                    <div class="tl-content">
+                                        <strong>美容師として原点へ</strong>
+                                        <p>父の紹介で床屋へ、その後美容師に転職。お米とネギとお味噌汁の毎日も、仕事への情熱は変わりませんでした。</p>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot">②</div>
+                                    <div class="tl-content">
+                                        <strong>リクルートでの経験</strong>
+                                        <p>交通事故を機に美容師を引退し、数回の転職を経てリクルートに。マネジメントと組織づくりを学びます。</p>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot">③</div>
+                                    <div class="tl-content">
+                                        <strong>31歳で独立・美容室経営スタート</strong>
+                                        <p>2013年7月4日、自分の誕生日に1店舗目を開業。朝から夜中まで1年間ほとんど休まずに奮闘しました。</p>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot">④</div>
+                                    <div class="tl-content">
+                                        <strong>2店舗→4店舗へフランチャイズ展開</strong>
+                                        <p>コンサル会社とサロンオーナー業を掛け持ち。フランチャイズ含めて4店舗を展開しながら、マネジメントの難しさに直面。</p>
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-dot">⑤</div>
+                                    <div class="tl-content">
+                                        <strong>会長職就任 → サロン全売却 → DLA創設</strong>
+                                        <p>悩む経営者の支えになりたいという思いからコンサル事業を本格化。4店舗全てを売却し、DLAを創設。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fade-in">
+                            <div class="invest-card">
+                                <h3>本気で学び、本気で投資してきた</h3>
+                                <p>経営と組織づくりを磨くために、数千万円規模の自己投資を継続してきました。現場の悩みも、組織をつくる難しさも、頭で理解したのではなく実際に体験してきました。</p>
+                                <div class="invest-big">自己投資額 数千万円</div>
+                                <p>「失敗を恐れずに挑戦してきたから今があります。壁から目をそらさず、どんなにつらいときでも絶対に乗り越える。それが私の人生にとって大きな財産です。」</p>
+                                <div style="margin-top:24px;">
+                                    <a href="./jo-takahashi.html" class="btn btn-outline"
+                                        style="width:100%;max-width:none;display:flex;">高橋 ジョウタロウ の詳しいプロフィールへ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑨ Funnel / Start Steps -->
+            <section class="funnel-section section">
+                <div class="container">
+                    <h2 class="section-title fade-in">まずはここから始められます</h2>
+                    <p class="section-subtitle fade-in">「いきなり本講座は重い」という方のために、段階的な導線をご用意しています。</p>
+                    <div class="funnel-steps">
+                        <div class="funnel-step fade-in">
+                            <div class="funnel-step-num">1</div>
+                            <span class="funnel-tag">無料</span>
+                            <h4>無料セミナー体験</h4>
+                            <p>DLAの考え方と全体像を体感できる最初の一歩。まずここから始めましょう。</p>
+                        </div>
+                        <div class="funnel-step fade-in">
+                            <div class="funnel-step-num">2</div>
+                            <span class="funnel-tag">無料</span>
+                            <h4>メルマガ・公式LINE</h4>
+                            <p>最新情報や学びを受け取りながら、自分のタイミングで検討できます。</p>
+                        </div>
+                        <div class="funnel-step fade-in">
+                            <div class="funnel-step-num">3</div>
+                            <span class="funnel-tag">有料</span>
+                            <h4>有料セミナー1回参加</h4>
+                            <p>本講座の前に、1回参加して体感してみる選択肢もあります。</p>
+                        </div>
+                        <div class="funnel-step fade-in">
+                            <div class="funnel-step-num">4</div>
+                            <span class="funnel-tag">本命</span>
+                            <h4>ベーシックプログラム</h4>
+                            <p>本気で組織を変えたい方に向けて、年間で実装まで伴走するメインプログラムです。</p>
+                        </div>
+                    </div>
+                    <div style="text-align:center;margin-top:48px;" class="fade-in">
+                        <a href="./contact.html#contact-form" class="btn btn-primary"
+                            style="margin-right:16px;">無料経営相談を予約する</a>
+                        <a href="./index.html#seminar" class="btn btn-outline">無料体験セミナーを見る</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑩ Story / World -->
+            <section class="story-section section">
+                <div class="container">
+                    <div class="story-box fade-in">
+                        <div class="story-icon"><svg aria-hidden="true" width="52" height="52" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="5" r="3" />
+                                <line x1="12" y1="22" x2="12" y2="8" />
+                                <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
+                            </svg></div>
+                        <div class="story-title">サロン経営は、荒れた海を渡る航海です。</div>
+                        <p class="story-text">
+                            目的地は人それぞれ違います。売上、組織、働き方、人生の豊かさ。そのどれもが、あなたにとって大切な目的地です。
+                            しかし荒れ狂う海を一人で渡るのは困難です。誰を船に乗せるか、どんな指導者と進むかで、到達できる未来は大きく変わります。
+                        </p>
+                        <p class="story-text">
+                            私自身も、指導者がいない中で本当に多くの遠回りをしてきました。だからこそ、今悩む経営者の方と一緒に船に乗り、
+                            あなただけの目的地へ向かうサポートをしたいと考えています。
+                        </p>
+                        <p class="story-text">
+                            原体験も過去も違うからこそ、目指す未来も一人ひとり違います。その未来に向かって、一緒に航海を始めましょう。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Closing -->
+            <section class="closing-section section">
+                <div class="container">
+                    <h2 class="section-title fade-in">未来は、今日の一歩で変わります</h2>
+                    <p class="section-subtitle fade-in">あなただけの目的地へ、一緒に船に乗って辿り着きましょう。</p>
+                    <div class="page-hero-actions fade-in" style="justify-content:center;margin-top:0;">
+                        <a href="./index.html#seminar" class="btn btn-primary">無料体験セミナーに申し込む</a>
+                        <a href="./contact.html#contact-form" class="btn btn-outline">問い合わせをする</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- 共通フッター（footer.html を common.js が自動挿入） -->
+    <div id="footer-placeholder"></div>
+
+    <script src="./common.js"></script>
+    <script src="./subpage-spa.js"></script>
+    <script src="./subpage-common.js"></script>
+</body>
+
+</html>
